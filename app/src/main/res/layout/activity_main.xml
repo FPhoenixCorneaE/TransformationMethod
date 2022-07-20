@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="13888888888"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvUserName1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="张三"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvUserName2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="夏洛特"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvUserName3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="慕容雪痕"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="888888.88"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <TextView
+                android:id="@+id/tvIdCard"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="210122199312200380"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <ImageButton
+                android:id="@+id/ivHide"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="onHide"
+                android:src="@drawable/svg_ic_password_hide"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/ivShow"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="onShow"
+                android:src="@drawable/svg_ic_password_show"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
