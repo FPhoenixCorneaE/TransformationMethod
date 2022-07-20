@@ -6,7 +6,7 @@
 
 <div align="center"> 
     <img src="https://github.com/FPhoenixCorneaE/TransformationMethod/blob/main/images/picture_hide.png" width="320" height="480" align="top" />
-    <img src="https://github.com/FPhoenixCorneaE/TransformationMethod/blob/main/images/picture_hide.png" width="320" height="480" align="top" style="margin-left:15px" />
+    <img src="https://github.com/FPhoenixCorneaE/TransformationMethod/blob/main/images/picture_show.png" width="320" height="480" align="top" style="margin-left:15px" />
 </div>
 
 ### How to include it in your project:
