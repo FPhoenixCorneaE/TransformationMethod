@@ -34,8 +34,9 @@ dependencies {
 ```
 
 ### 特性
-* PhoneNumberTransformationMethod：手机号掩码处理
-* UserNameTransformationMethod：用户名掩码处理
-* PriceTransformationMethod：金额掩码处理
-* IdCardTransformationMethod：身份证掩码处理
-* PasswordTransformationMethod：密码掩码处理
+
+* **PhoneNumberTransformationMethod**：手机号掩码处理
+* **UserNameTransformationMethod**：用户名掩码处理
+* **PriceTransformationMethod**：金额掩码处理
+* **IdCardTransformationMethod**：身份证掩码处理
+* **PasswordTransformationMethod**：密码掩码处理
