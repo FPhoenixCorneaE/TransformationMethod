@@ -16,17 +16,19 @@ class MainActivity : AppCompatActivity() {
             mViewBinding = it
             it.lifecycleOwner = this
             setContentView(it.root)
+            it.etPassword.transformationMethod = PasswordTransformationMethod.getInstance('\u2022')
+            it.tvPrice.transformationMethod = PriceTransformationMethod.getInstance('$')
         }
     }
 
     fun onHide(view: View) {
         with(mViewBinding) {
-            etPassword.transformationMethod = PasswordTransformationMethod.getInstance()
+            etPassword.transformationMethod = PasswordTransformationMethod.getInstance('*', true)
             tvPhoneNo.transformationMethod = PhoneNumberTransformationMethod.getInstance()
             tvUserName1.transformationMethod = UserNameTransformationMethod.getInstance()
             tvUserName2.transformationMethod = UserNameTransformationMethod.getInstance()
             tvUserName3.transformationMethod = UserNameTransformationMethod.getInstance()
-            tvPrice.transformationMethod = PriceTransformationMethod.getInstance()
+            tvPrice.transformationMethod = PriceTransformationMethod.getInstance('*', true)
             tvIdCard.transformationMethod = IdCardTransformationMethod.getInstance()
         }
     }

@@ -22,8 +22,12 @@ class PriceTransformationMethod private constructor(
         private var sInstance: PriceTransformationMethod? = null
 
         @Synchronized
-        fun getInstance(char: Char = '*') = sInstance ?: synchronized(this) {
-            sInstance ?: PriceTransformationMethod(char).also { sInstance = it }
+        fun getInstance(char: Char = '*', forceChange: Boolean = false) = if (forceChange) {
+            PriceTransformationMethod(char)
+        } else {
+            sInstance ?: synchronized(this) {
+                sInstance ?: PriceTransformationMethod(char).also { sInstance = it }
+            }
         }
     }
 }

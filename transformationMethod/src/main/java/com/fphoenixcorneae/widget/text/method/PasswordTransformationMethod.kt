@@ -22,8 +22,12 @@ class PasswordTransformationMethod private constructor(
         private var sInstance: PasswordTransformationMethod? = null
 
         @Synchronized
-        fun getInstance(char: Char = '*') = sInstance ?: synchronized(this) {
-            sInstance ?: PasswordTransformationMethod(char).also { sInstance = it }
+        fun getInstance(char: Char = '*', forceChange: Boolean = false) = if (forceChange) {
+            PasswordTransformationMethod(char)
+        } else {
+            sInstance ?: synchronized(this) {
+                sInstance ?: PasswordTransformationMethod(char).also { sInstance = it }
+            }
         }
     }
 }
